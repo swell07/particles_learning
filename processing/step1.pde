@@ -1,4 +1,4 @@
-// what is a particle?
+// what is a particle? (start from single one)
 
 Particle p;
 void setup() {

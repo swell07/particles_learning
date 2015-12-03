@@ -1,7 +1,8 @@
 ParticleSystem ps;
 
 void setup() {
-  size($('#touch').width(), $('#touch').height(), P2D);
+  //size($('#touch').width(), $('#touch').height(), P2D);
+    size(screen.width, screen.height, P2D);
   int a  = floor(random(3));
   color[][] colors = {
     {color(130, 0, 255), color(255, 0, 255), color(0, 130, 255), color(0, 255, 255)},

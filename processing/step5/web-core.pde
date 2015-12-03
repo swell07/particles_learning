@@ -14,7 +14,7 @@ class Particle {
   float Y;
 
 
-  Particle(PVector l, float _r, color _c float vx, float vy, float ax, float ay, boolean isFRun, ParticleSystem ps) {
+  Particle(PVector l, float _r, color _c, float vx, float vy, float ax, float ay, boolean isFRun, ParticleSystem ps) {
     acceleration = new PVector(ax, ay); //new PVector(0, random(-0.05, 0.05));
     velocity = new PVector(vx, vy);
     location = l.get();
@@ -118,7 +118,7 @@ class ParticleSystem {
         }else{
           colorchange = lerpColor(colors[2], colors[3], random(1));
         }
-        particles.add(new Particle (origin, r, c, vx, vy, ax, ay, true, self));
+        particles.add(new Particle (origin, r, colorchange, vx, vy, ax, ay, true, self));
       }
       if (!(compareMouse())) {
         vx= 0;
